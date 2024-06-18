@@ -29,19 +29,42 @@ print(list_1)
 # print(list_1.insert(2, 17))
 # print(list_1) # [12, 7, 17, -1, 21, 0]
 
-## работа со срезами
-list_1 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-print(list_1[0]) # 1
-print(list_1[1]) # 2
-print(list_1[len(list_1)-1]) # 10
-print(list_1[-5]) # 6
-print(list_1[:]) # [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-print(list_1[:2]) # [1, 2]
-print(list_1[len(list_1)-2:]) #[9, 10]
-print(list_1[2:9]) # [3, 4, 5, 6, 7, 8, 9]
-print(list_1[6:-18]) # []
-print(list_1[0:len(list_1):6]) # [1, 7]
-print(list_1[::6]) # [1, 7]
+# ## работа со срезами
+# list_1 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+# print(list_1[0]) # 1
+# print(list_1[1]) # 2
+# print(list_1[len(list_1)-1]) # 10
+# print(list_1[-5]) # 6
+# print(list_1[:]) # [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+# print(list_1[:2]) # [1, 2]
+# print(list_1[len(list_1)-2:]) #[9, 10]
+# print(list_1[2:9]) # [3, 4, 5, 6, 7, 8, 9]
+# print(list_1[6:-18]) # []
+# print(list_1[0:len(list_1):6]) # [1, 7]
+# print(list_1[::6]) # [1, 7]
 
+# ## Кортеж — это неизменяемый список.
+# ## Тогда для чего нужны кортежи, если их нельзя изменить? В случае защиты
+# ## каких-либо данных от изменений (намеренных или случайных). Кортеж занимает
+# ## меньше места в памяти и работают быстрее, по сравнению со списками
+
+# t = () # создание пустого кортежа
+# print(type(t)) # class <'tuple'>
+# t = (1,)
+# print(type(t))
+# t = (1)
+# print(type(t))
+# t = (28, 9, 1990)
+# print(type(t))
+# colors = ['red', 'green', 'blue']
+# print(colors) # ['red', 'green', 'blue']
+# t = tuple(colors)
+# print(t) # ('red', 'green', 'blue')
+# t = tuple(['red', 'green', 'blue'])
+# print(t[0]) # red
+# print(t[2]) # blue
+# for e in t:
+#     print(e) # red green blue
+#     t[0] = 'black' # TypeError: 'tuple' object does not support(нельзя изменять кортеж)
 
 
