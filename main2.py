@@ -18,3 +18,9 @@ print(list_1)
 # print(list_1) # [12, 7, -1]
 # print(list_1.pop()) #-1
 # print(list_1) # [12, 7]
+
+# ## удаление конкретного элемета из списка
+# list_1 = [12, 7, -1, 21, 0]
+# print(list_1.pop(0)) #12
+# print(list_1) # [7, -1, 21, 0]
+
